@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veezy Logo Animation</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0d0d15;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .logo-container {
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 1s ease-in forwards;
+  }
+
+  .logo-main {
+    font-size: 0px;
+    font-weight: 700;
+    letter-spacing: -5px;
+    color: #ffffff;
+    animation: growMain 2s ease-out forwards;
+  }
+
+  .logo-sub {
+    font-size: 0px;
+    font-weight: 500;
+    color: #f5f5f5;
+    opacity: 0;
+    animation: growSub 2s 1s ease-out forwards;
+  }
+
+  /* Animação para o "VZ" */
+  @keyframes growMain {
+    0% {
+      font-size: 0px;
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      font-size: 140px;
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* Animação para o "Veezy" */
+  @keyframes growSub {
+    0% {
+      font-size: 0px;
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      font-size: 36px;
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* Leve fade geral */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="logo-container">
+  <div class="logo-main">VZ</div>
+  <div class="logo-sub">Veezy</div>
+</div>
+
+</body>
+</html>
