@@ -1,2 +1,2 @@
-# Cortex
-É um app de cortes automático de vídeo com ia
+# Vezzy
+Seu futuro como streamer começa aqui
